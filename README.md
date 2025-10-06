@@ -13,6 +13,16 @@ I’m learning to query, manipulate, and optimize data efficiently while explori
 
 ---
 
+## 🛠️ Tools & Environment  
+
+For all the practice and projects in this repository, I’m using the following setup:
+
+- **Database Engine:** Microsoft SQL Server 2022 Express  
+- **Interface / IDE:** SQL Server Management Studio 21
+- **Operating System:** Windows 11 (64-bit)  
+
+---
+
 📂 Course Structure  
 
 ### 🟢 Beginner Level  
