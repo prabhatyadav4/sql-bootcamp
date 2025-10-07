@@ -12,7 +12,12 @@ I’m learning to query, manipulate, and optimize data efficiently while explori
 **Sections:** 4 (Beginner → Intermediate → Advanced → Projects)
 
 ---
+## 🧭 SQL Course Syllabus  
 
+<img width="1340" height="686" alt="SQL Syllabys" src="https://github.com/user-attachments/assets/86fa2f49-c846-4d01-8992-6e7b91a46b36" />
+
+
+---
 ## 🛠️ Tools & Environment  
 
 For all the practice and projects in this repository, I’m using the following setup:
