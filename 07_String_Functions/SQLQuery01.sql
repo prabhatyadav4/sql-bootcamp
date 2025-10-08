@@ -1,4 +1,4 @@
--- Show a list of customers' first names together with their country in one column.
+-- Show a list of customer's first names together with their country in one column.
 
 SELECT 
 	first_name,
