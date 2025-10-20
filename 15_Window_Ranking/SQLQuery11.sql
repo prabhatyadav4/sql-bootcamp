@@ -1,4 +1,4 @@
--- Find the products that fall within the highest 40% of the prices.
+-- Find the products that fall within the highest 40% of the prices (Using CUME_DIST).
 
 SELECT
 	Product,
