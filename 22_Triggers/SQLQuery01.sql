@@ -18,6 +18,7 @@ BEGIN
 	INSERT INTO Sales.EmployeeLogs(EmployeeID, LogMessage, LogDate)
 	SELECT
 		EmployeeID,
+		-- Replace NULLs in the FirstName or in the LastName with blank space.
 		'New Employee Added: ' + COALESCE(FirstName, '') + ' ' + COALESCE(LastName, ''),
 		GETDATE()
 	FROM INSERTED
