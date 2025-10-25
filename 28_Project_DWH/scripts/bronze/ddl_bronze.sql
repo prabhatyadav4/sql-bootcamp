@@ -1,53 +1,73 @@
 /*
-===============================================================================
+=================================================================================
 DDL Script: Create Bronze Tables
-===============================================================================
+=================================================================================
 Script Purpose:
-    This script creates tables in the 'bronze' schema, dropping existing tables, 
-    if they already exist.
-	Run this script to re-define the DDL structure of 'bronze' Tables
-===============================================================================
+    This script creates Bronze schema tables.
+    Existing tables (if present) will be dropped first to maintain a clean state.
+=================================================================================
 */
 
--- Drop CRM Customer table if exists
+PRINT 'Starting Bronze Layer DDL Execution...';
+
+
+/*
+------------------------------------------------------
+Drop & Create: bronze.crm_cust_info
+------------------------------------------------------
+*/
+PRINT 'Dropping Table if exists: bronze.crm_cust_info';
 IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_cust_info;
 GO
 
--- Create CRM Customer table
+PRINT 'Creating Table: bronze.crm_cust_info';
 CREATE TABLE bronze.crm_cust_info (
-    cst_id              INT,	
-    cst_key	            NVARCHAR(50),
-    cst_firstname	    NVARCHAR(50),
-    cst_lastname	    NVARCHAR(50),
-    cst_marital_status	NVARCHAR(50),
-    cst_gndr	        NVARCHAR(50),
+    cst_id              INT,
+    cst_key             NVARCHAR(50),
+    cst_firstname       NVARCHAR(50),
+    cst_lastname        NVARCHAR(50),
+    cst_marital_status  NVARCHAR(50),
+    cst_gndr            NVARCHAR(50),
     cst_create_date     DATE
 );
+GO
 
--- Drop CRM Product table if exists
+
+/*
+------------------------------------------------------
+Drop & Create: bronze.crm_prd_info
+------------------------------------------------------
+*/
+PRINT 'Dropping Table if exists: bronze.crm_prd_info';
 IF OBJECT_ID('bronze.crm_prd_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_prd_info;
 GO
 
--- Create CRM Product table
+PRINT 'Creating Table: bronze.crm_prd_info';
 CREATE TABLE bronze.crm_prd_info (
     prd_id          INT,
-    prd_key	        NVARCHAR(50),
-    prd_nm	        NVARCHAR(50),
-    prd_cost	    INT,
-    prd_line	    NVARCHAR(50),
-    prd_start_dt	DATETIME,
+    prd_key         NVARCHAR(50),
+    prd_nm          NVARCHAR(50),
+    prd_cost        INT,
+    prd_line        NVARCHAR(50),
+    prd_start_dt    DATETIME,
     prd_end_dt      DATETIME
 );
 GO
 
--- Drop CRM Sales Details table if exists
+
+/*
+------------------------------------------------------
+Drop & Create: bronze.crm_sales_details
+------------------------------------------------------
+*/
+PRINT 'Dropping Table if exists: bronze.crm_sales_details';
 IF OBJECT_ID('bronze.crm_sales_details', 'U') IS NOT NULL
     DROP TABLE bronze.crm_sales_details;
 GO
 
--- Create CRM Sales Details table
+PRINT 'Creating Table: bronze.crm_sales_details';
 CREATE TABLE bronze.crm_sales_details (
     sls_ord_num  NVARCHAR(50),
     sls_prd_key  NVARCHAR(50),
@@ -61,24 +81,36 @@ CREATE TABLE bronze.crm_sales_details (
 );
 GO
 
--- Drop ERP Location table if exists
+
+/*
+------------------------------------------------------
+Drop & Create: bronze.erp_loc_a101
+------------------------------------------------------
+*/
+PRINT 'Dropping Table if exists: bronze.erp_loc_a101';
 IF OBJECT_ID('bronze.erp_loc_a101', 'U') IS NOT NULL
     DROP TABLE bronze.erp_loc_a101;
 GO
 
--- Create ERP Location table
+PRINT 'Creating Table: bronze.erp_loc_a101';
 CREATE TABLE bronze.erp_loc_a101 (
     cid    NVARCHAR(50),
     cntry  NVARCHAR(50)
 );
 GO
 
--- Drop ERP Customer table if exists
+
+/*
+------------------------------------------------------
+Drop & Create: bronze.erp_cust_az12
+------------------------------------------------------
+*/
+PRINT 'Dropping Table if exists: bronze.erp_cust_az12';
 IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
     DROP TABLE bronze.erp_cust_az12;
 GO
 
--- Create ERP Customer table
+PRINT 'Creating Table: bronze.erp_cust_az12';
 CREATE TABLE bronze.erp_cust_az12 (
     cid    NVARCHAR(50),
     bdate  DATE,
@@ -86,12 +118,18 @@ CREATE TABLE bronze.erp_cust_az12 (
 );
 GO
 
--- Drop ERP Product Category table if exists
+
+/*
+------------------------------------------------------
+Drop & Create: bronze.erp_px_cat_g1v2
+------------------------------------------------------
+*/
+PRINT 'Dropping Table if exists: bronze.erp_px_cat_g1v2';
 IF OBJECT_ID('bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
     DROP TABLE bronze.erp_px_cat_g1v2;
 GO
 
--- Create ERP Product Category table
+PRINT 'Creating Table: bronze.erp_px_cat_g1v2';
 CREATE TABLE bronze.erp_px_cat_g1v2 (
     id           NVARCHAR(50),
     cat          NVARCHAR(50),
@@ -99,3 +137,6 @@ CREATE TABLE bronze.erp_px_cat_g1v2 (
     maintenance  NVARCHAR(50)
 );
 GO
+
+
+PRINT 'Bronze Layer DDL Completed Successfully!';
