@@ -263,19 +263,21 @@ This comprehensive course takes you from **SQL fundamentals** to **advanced data
 - ETL pipeline development
 - Star schema design
 - Data quality framework
-- 🔗 [View Project Repository](https://github.com/prabhatyadav4/SQL-DataWarehouse-Project)
+- 🔗 [View Project Repository](https://github.com/prabhatyadav4/sql-data-warehouse-project)
 
 #### 29. Project: Exploratory Data Analysis (EDA)
 - Statistical analysis with SQL
 - Data profiling techniques
 - Pattern discovery
 - Insight generation
+- 🔗 [View Project Repository](https://github.com/prabhatyadav4/sql-data-analytics-project)
 
 #### 30. Project: Advanced Data Analytics (ADA)
 - Complex analytical queries
 - Business intelligence reporting
 - KPI calculations
 - Dashboard data preparation
+- 🔗 [View Project Repository](https://github.com/prabhatyadav4/sql-data-analytics-project)
 
 </details>
 
@@ -300,21 +302,21 @@ Through this course, I've gained expertise in:
 Complete implementation of a data warehouse using Bronze-Silver-Gold layers with ETL pipelines and star schema design.
 
 **Tech:** SQL Server | Medallion Architecture | Star Schema | ETL  
-**Repository:** [SQL-DataWarehouse-Project](https://github.com/prabhatyadav4/SQL-DataWarehouse-Project)  
+**Repository:** [sql-data-warehouse-project](https://github.com/prabhatyadav4/sql-data-warehouse-project)  
 **Status:** ✅ Complete
 
 ### 2. Exploratory Data Analysis (EDA)
 Statistical analysis and data profiling using advanced SQL techniques for discovering patterns and insights in datasets.
 
 **Tech:** SQL Server | Statistical Analysis | Data Profiling  
-**Repository:** [SQL-EDA-Project](https://github.com/prabhatyadav4/SQL-EDA-Project)  
+**Repository:** [sql-data-analytics-project](https://github.com/prabhatyadav4/sql-data-analytics-project)  
 **Status:** ✅ Complete
 
 ### 3. Advanced Data Analytics (ADA)
 Business intelligence and KPI reporting with complex analytical queries for real-world business scenarios.
 
 **Tech:** SQL Server | BI Reporting | Advanced Analytics  
-**Repository:** [SQL-ADA-Project](https://github.com/prabhatyadav4/SQL-ADA-Project)  
+**Repository:** [sql-data-analytics-project](https://github.com/prabhatyadav4/sql-data-analytics-project)  
 **Status:** ✅ Complete
 
 ---
