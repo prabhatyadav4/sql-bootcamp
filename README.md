@@ -350,7 +350,7 @@ Projects:           ████████████████████
 
 Massive thanks to **[Baraa Khatib Salkini](https://www.youtube.com/@DataWithBaraa)** for creating this comprehensive SQL course. His practical teaching approach, real-world examples, and project-based learning methodology have been invaluable in my data engineering journey.
 
-🎓 **Course Link:** [SQL Ultimate Course 2025](https://www.youtube.com/@DataWithBaraa)
+🎓 **Course Link:** [SQL Full Course for Beginners (30 Hours) – From Zero to Hero](https://youtu.be/SSKVgrwhzus?si=bOZab38GqhFRNLJa)
 
 ---
 
